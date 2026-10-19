@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Brillé Joyería</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        :root {
+            --pink-soft: #f8e1e7;
+            --pink-accent: #e8a5b8;
+            --pink-dark: #d47a96;
+            --text-main: #4a3e3d;
+        }
+
+        body {
+            background-color: #fffafb;
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bg-brille-pink {
+            background-color: var(--pink-soft);
+            border-bottom: 2px solid var(--pink-accent);
+        }
+
+        .brand-logo {
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--pink-dark) !important;
+            font-size: 1.4rem;
+        }
+
+        .slogan-text {
+            font-size: 0.85rem;
+            color: #7d6268;
+            font-style: italic;
+        }
+
+        .btn-pink {
+            background-color: var(--pink-dark);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+
+        .btn-pink:hover {
+            background-color: #be5f7a;
+            color: white;
+        }
+
+        .btn-outline-pink {
+            border: 1.5px solid var(--pink-dark);
+            color: var(--pink-dark);
+            border-radius: 20px;
+        }
+
+        .btn-outline-pink:hover {
+            background-color: var(--pink-soft);
+            color: var(--pink-dark);
+        }
+
+        footer {
+            background-color: var(--pink-soft);
+            border-top: 1px solid var(--pink-accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-brille-pink mb-4 shadow-sm">
+            <div class="container">
+                <a class="navbar-brand brand-logo" asp-controller="Home" asp-action="Index">
+                    ✨ BRILLÉ
+                    <span class="d-block slogan-text">Donde cada brillo cuenta.✨</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-secondary" asp-controller="Home" asp-action="Index">🌸 Anillos & Colecciones</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2 align-items-center">
+                        <a class="btn btn-outline-pink btn-sm d-flex align-items-center" asp-controller="Cart" asp-action="Index">
+                            🛒 Carrito <span class="badge bg-danger ms-2">0</span>
+                        </a>
+                        <a class="btn btn-pink btn-sm" asp-controller="Admin" asp-action="Index">⚙️ Admin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-center py-3 mt-5">
+        <div class="container small text-secondary">
+            &copy; 2026 - <strong>Brillé Joyería</strong> | Santa Ana, El Salvador 🇸🇻<br />
+            <span class="text-muted">Envíos nacionales con Melo Express ($1.50) y Pedidos Express ($2.00)</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

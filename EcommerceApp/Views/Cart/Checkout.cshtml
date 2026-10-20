@@ -1,0 +1,41 @@
+@model EcommerceApp.Models.Order
+@{
+    ViewData["Title"] = "Checkout - Finalizar Reserva";
+}
+
+<h3 class="fw-bold text-pink-dark mb-3">📋 Datos de la Reserva y Envío</h3>
+
+<form asp-action="ProcessCheckout" method="post" class="card p-4 shadow-sm border-0">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Nombre Completo</label>
+            <input asp-for="CustomerName" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Correo Electrónico</label>
+            <input asp-for="CustomerEmail" type="email" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Teléfono / WhatsApp</label>
+            <input asp-for="CustomerPhone" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Dirección de Entrega</label>
+            <input asp-for="DestinationAddress" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Método de Envío</label>
+            <select asp-for="Shipping" class="form-select" required>
+                <option value="0">MeloExpress ($1.50 - Recolección Lun/Jue)</option>
+                <option value="1">Pedidos Express ($2.00 - Recolección Mar/Vie)</option>
+                <option value="2">Entrega Personal ($3.00 - Caso Especial Yami)</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Fecha Preferida de Entrega</label>
+            <input asp-for="PreferredDeliveryDate" type="date" class="form-control" required />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-pink btn-lg mt-4 w-100">Confirmar Reserva ✨</button>
+</form>

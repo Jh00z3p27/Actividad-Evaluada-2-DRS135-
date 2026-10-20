@@ -2387,11 +2387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cerritos/Documentos/ProyectoBrille/EcommerceApp/EcommerceApp.csproj",
+      "projectUniqueName": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/EcommerceApp.csproj",
       "projectName": "EcommerceApp",
-      "projectPath": "/home/cerritos/Documentos/ProyectoBrille/EcommerceApp/EcommerceApp.csproj",
+      "projectPath": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/EcommerceApp.csproj",
       "packagesPath": "/home/cerritos/.nuget/packages/",
-      "outputPath": "/home/cerritos/Documentos/ProyectoBrille/EcommerceApp/obj/",
+      "outputPath": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cerritos/.nuget/NuGet/NuGet.Config"

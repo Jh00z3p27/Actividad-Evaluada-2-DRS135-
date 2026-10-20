@@ -1,11 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using EcommerceApp.Data;
+using EcommerceApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuración de SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite("Data Source=brille.db"));
+
+// Registro del Patrón Singleton para el Carrito de Compras
+builder.Services.AddSingleton(CartService.Instance);
 
 builder.Services.AddControllersWithViews();
 

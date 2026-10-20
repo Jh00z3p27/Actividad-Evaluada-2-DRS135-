@@ -1,0 +1,18 @@
+@model EcommerceApp.Models.Order
+@{
+    ViewData["Title"] = "Reserva Confirmada";
+}
+
+<div class="text-center py-5">
+    <h2 class="text-success fw-bold">🎉 ¡Reserva Registrada Exitosamente!</h2>
+    <p class="fs-5">Número de Orden: <strong>#@Model.Id</strong></p>
+    <p class="text-muted">Gracias <strong>@Model.CustomerName</strong>, nos pondremos en contacto al <strong>@Model.CustomerPhone</strong> para coordinar la entrega.</p>
+    <div class="card d-inline-block p-4 mt-3 text-start shadow-sm" style="max-width: 450px;">
+        <p class="mb-1"><strong>Método de Envío:</strong> @Model.Shipping</p>
+        <p class="mb-1"><strong>Costo Envío:</strong> $@Model.ShippingCost</p>
+        <h4 class="mt-2 text-pink-dark">Total a Pagar: $@Model.Total</h4>
+    </div>
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-pink">Volver a la Tienda</a>
+    </div>
+</div>

@@ -1,18 +1,52 @@
 @model EcommerceApp.Models.Order
 @{
-    ViewData["Title"] = "Reserva Confirmada";
+    ViewData["Title"] = "Preorden Registrada";
+
+    var itemsDetail = string.Join(", ", Model.Items.Select(i => $"{i.Product?.Name ?? "Anillo"} (Talla {i.SelectedSize}) x{i.Quantity}"));
+
+    var validationMsg = $"Usted está realizando un pedido con Brillé para adquirir:\n" +
+                        $"• Pedido: {itemsDetail}\n" +
+                        $"• Subtotal: ${Model.Subtotal}\n" +
+                        $"• Lugar de entrega: {Model.DestinationAddress}\n" +
+                        $"• Fecha de retiro: {Model.PreferredDeliveryDate.ToString("dd/MM/yyyy")}\n" +
+                        $"• Persona encargada: {Model.CustomerName} (Tel: {Model.CustomerPhone})\n" +
+                        $"• Envío: Pendiente de cotización por confirmación.\n\n" +
+                        $"¿Desea continuar con el pedido? Responda ÚNICAMENTE: SÍ o NO.";
+
+    var waLink = $"https://wa.me/50378108928?text={Uri.EscapeDataString(validationMsg)}";
+    var mailToLink = $"mailto:josecerritos121427@gmail.com?subject={Uri.EscapeDataString($"Confirmación Preorden #{Model.Id} - Brillé")}&body={Uri.EscapeDataString(validationMsg)}";
 }
 
-<div class="text-center py-5">
-    <h2 class="text-success fw-bold">🎉 ¡Reserva Registrada Exitosamente!</h2>
-    <p class="fs-5">Número de Orden: <strong>#@Model.Id</strong></p>
-    <p class="text-muted">Gracias <strong>@Model.CustomerName</strong>, nos pondremos en contacto al <strong>@Model.CustomerPhone</strong> para coordinar la entrega.</p>
-    <div class="card d-inline-block p-4 mt-3 text-start shadow-sm" style="max-width: 450px;">
-        <p class="mb-1"><strong>Método de Envío:</strong> @Model.Shipping</p>
-        <p class="mb-1"><strong>Costo Envío:</strong> $@Model.ShippingCost</p>
-        <h4 class="mt-2 text-pink-dark">Total a Pagar: $@Model.Total</h4>
+<div class="text-center py-4">
+    <h2 class="text-pink-dark fw-bold">🌸 ¡Preorden de Reserva Registrada!</h2>
+    <p class="fs-5">Número de Preorden: <strong>#@Model.Id</strong></p>
+
+    <div class="alert alert-warning border-0 shadow-sm d-inline-block text-start my-3 p-4" style="max-width: 600px;">
+        <h5 class="fw-bold">⚠️ Pasos finales para validar tu orden:</h5>
+        <p class="small mb-2">Para que tu pedido aparezca como <strong>Confirmado y Validado</strong> en el panel de Brillé, debes enviar la confirmación de validación respondiendo <strong>SÍ</strong> a través de WhatsApp o Correo Electrónico.</p>
+        <p class="small mb-0"><strong>Plazo límite de pago (Transferencia):</strong> 24 horas máximo a partir de este momento.</p>
     </div>
+
+    <div class="card shadow-sm border-0 d-block mx-auto text-start p-4 mb-4" style="max-width: 550px;">
+        <h5 class="fw-bold text-pink-dark border-bottom pb-2">Resumen del Desglose</h5>
+        <p class="mb-1"><strong>Productos:</strong> @itemsDetail</p>
+        <p class="mb-1"><strong>Subtotal Anillos:</strong> $@Model.Subtotal</p>
+        <p class="mb-1"><strong>Envío (Pedidos Express):</strong> <span class="badge bg-warning text-dark">Pendiente de Cotizar</span></p>
+        <p class="mb-1"><strong>Lugar de Retiro:</strong> @Model.DestinationAddress</p>
+        <p class="mb-1"><strong>Persona Encargada:</strong> @Model.CustomerName (@Model.CustomerPhone)</p>
+        <p class="mb-1"><strong>Método de Pago:</strong> @Model.Payment</p>
+    </div>
+
+    <div class="d-flex justify-content-center gap-3">
+        <a href="@waLink" target="_blank" class="btn btn-success btn-lg">
+            📲 Confirmar por WhatsApp (78108928)
+        </a>
+        <a href="@mailToLink" class="btn btn-outline-primary btn-lg">
+            ✉️ Confirmar por Correo
+        </a>
+    </div>
+
     <div class="mt-4">
-        <a href="@Url.Action("Index", "Home")" class="btn btn-pink">Volver a la Tienda</a>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-link text-muted">Volver a la Tienda</a>
     </div>
 </div>

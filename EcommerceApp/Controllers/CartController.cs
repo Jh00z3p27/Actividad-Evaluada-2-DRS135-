@@ -44,20 +44,11 @@ namespace EcommerceApp.Controllers
             var cart = CartService.Instance;
             if (!cart.Items.Any()) return RedirectToAction("Index");
 
-            // Asignar costos de envío
-            order.ShippingCost = order.Shipping switch
-            {
-                ShippingMethod.MeloExpress => 1.50m,
-                ShippingMethod.PedidosExpress => 2.00m,
-                ShippingMethod.EntregaPersonal => 3.00m, // Especial
-                _ => 0.00m
-            };
-
-            order.Total = cart.GetTotal() + order.ShippingCost;
-            order.Status = OrderStatus.Pendiente;
+            order.Subtotal = cart.GetTotal();
+            order.ShippingCost = 0.00m; // Cotización pendiente
+            order.Status = OrderStatus.PreordenPendiente;
             order.OrderDate = DateTime.Now;
 
-            // Descontar Stock
             foreach (var item in cart.Items)
             {
                 var productSize = await _context.ProductSizes
@@ -65,7 +56,7 @@ namespace EcommerceApp.Controllers
 
                 if (productSize != null)
                 {
-                    productSize.Stock -= item.Quantity;
+                    productSize.Stock -= item.Quantity; // Descuento de inventario
                 }
 
                 order.Items.Add(new OrderItem
@@ -82,7 +73,19 @@ namespace EcommerceApp.Controllers
 
             cart.Clear();
 
-            return View("Confirmation", order);
+            return RedirectToAction("Confirmation", new { id = order.Id });
+        }
+
+        public async Task<IActionResult> Confirmation(int id)
+        {
+            var order = await _context.Orders
+                .Include(o => o.Items)
+                .ThenInclude(i => i.Product)
+                .FirstOrDefaultAsync(o => o.Id == id);
+
+            if (order == null) return RedirectToAction("Index", "Home");
+
+            return View(order);
         }
     }
 }

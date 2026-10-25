@@ -1,0 +1,112 @@
+@model EcommerceApp.Models.Product
+@{
+    ViewData["Title"] = "Agregar Anillo / Gestionar Categorías";
+    var categories = ViewBag.Categories as List<EcommerceApp.Models.Category>;
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        ✨ @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        ⚠️ @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<!-- Punto 1: Botón Volver al Inventario -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="fw-bold text-pink-dark mb-0">⚙️ Configuración de Inventario y Categorías</h3>
+    <a asp-action="Index" class="btn btn-outline-pink fw-bold">⬅️ Volver al Inventario</a>
+</div>
+
+<div class="row g-4 mb-4">
+    <!-- Punto 2: Crear y Gestión de Categorías Existentes -->
+    <div class="col-md-5">
+        <div class="card p-4 shadow-sm border-0 mb-4">
+            <h5 class="fw-bold text-pink-dark mb-3">🏷️ Crear Nueva Categoría</h5>
+            <form asp-action="CreateCategory" method="post">
+                <div class="mb-3">
+                    <label class="form-label small fw-bold">Nombre de Categoría</label>
+                    <input type="text" name="categoryName" class="form-control" placeholder="Ej: Edición San Valentín" required />
+                </div>
+                <button type="submit" class="btn btn-outline-pink w-100 fw-bold">Guardar Categoría</button>
+            </form>
+        </div>
+
+        <div class="card p-4 shadow-sm border-0">
+            <h5 class="fw-bold text-pink-dark mb-3">📋 Categorías Existentes</h5>
+            <div class="list-group list-group-flush">
+                @if (categories != null && categories.Any())
+                {
+                    foreach (var cat in categories)
+                    {
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <span class="fw-semibold">@cat.Name</span>
+                            <form asp-action="DeleteCategory" method="post" onsubmit="return confirm('¿Seguro de eliminar esta categoría?');">
+                                <input type="hidden" name="id" value="@cat.Id" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger py-0 px-2">🗑️ Eliminar</button>
+                            </form>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted small">No hay categorías registradas.</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario Registrar Anillo -->
+    <div class="col-md-7">
+        <form asp-action="Create" method="post" enctype="multipart/form-data" class="card p-4 shadow-sm border-0">
+            <h5 class="fw-bold text-pink-dark mb-3">➕ Registrar Nuevo Anillo</h5>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nombre del Anillo</label>
+                <input asp-for="Name" class="form-control" placeholder="Ej: Anillo Corona Plata Ale s925" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Descripción / Detalles</label>
+                <textarea asp-for="Description" class="form-control" rows="2" placeholder="Piedras en forma de corona. Incluye caja Pandora." required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Categoría</label>
+                <select asp-for="CategoryId" class="form-select" required>
+                    <option value="">-- Seleccionar Categoría --</option>
+                    @if (categories != null)
+                    {
+                        foreach (var cat in categories)
+                        {
+                            <option value="@cat.Id">@cat.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Fotografía del Anillo</label>
+                <input type="file" name="imageFile" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Tallas y Cantidad de Stock Inicial</label>
+                <input type="text" name="sizesStock" class="form-control" placeholder="Formato: 6:5, 7:10, 8:3" required />
+                <small class="text-muted">Formato: <code>Talla:Stock, Talla:Stock</code></small>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+                <button type="submit" class="btn btn-pink w-100 fw-bold">Guardar en Inventario ✨</button>
+            </div>
+        </form>
+    </div>
+</div>

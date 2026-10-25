@@ -18,6 +18,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/Views/Admin/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3VzdG9tZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/Views/Admin/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/Views/Cart/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9DaGVja291dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

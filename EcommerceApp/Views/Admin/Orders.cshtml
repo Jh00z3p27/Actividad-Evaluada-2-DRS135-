@@ -1,0 +1,99 @@
+@model IEnumerable<EcommerceApp.Models.Order>
+@{
+    ViewData["Title"] = "Preordenes y Encomiendas - Admin";
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        ✨ @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="fw-bold text-pink-dark mb-0">📦 Gestión de Preordenes y Encomiendas</h3>
+    <div>
+        <a asp-action="Index" class="btn btn-outline-pink me-2">📦 Inventario</a>
+        <a asp-action="Customers" class="btn btn-outline-pink">👥 Agenda de Clientes</a>
+    </div>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-0">
+        <table class="table align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th># Orden</th>
+                    <th>Cliente / Contacto</th>
+                    <th>Lugar / Punto de Entrega</th>
+                    <th>Método / Pago</th>
+                    <th>Detalle Pedido</th>
+                    <th>Comprobante</th>
+                    <th>Envío & Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var o in Model)
+                {
+                    <tr>
+                        <td><strong>#@o.Id</strong><br /><small class="text-muted">@o.OrderDate.ToString("dd/MM/yy HH:mm")</small></td>
+                        <td>
+                            <strong>@o.CustomerName</strong><br />
+                            <small>📲 @o.CustomerPhone</small>
+                        </td>
+                        <td>
+                            <small class="fw-bold">@o.Department, @o.Municipality</small><br />
+                            <small class="text-muted">@o.DestinationAddress</small>
+                        </td>
+                        <td>
+                            <span class="badge bg-light text-dark border">@o.Shipping</span><br />
+                            <small class="fw-bold">@o.Payment</small>
+                        </td>
+                        <td>
+                            <small>
+                                @foreach (var item in o.Items)
+                                {
+                                    <div>• @item.Product?.Name (Talla @item.SelectedSize) x@item.Quantity</div>
+                                }
+                            </small>
+                            <strong class="text-pink-dark">Subtotal: $@o.Subtotal</strong>
+                        </td>
+                        <td>
+                            @if (o.PaymentProofReceived)
+                            {
+                                <span class="badge bg-success">✅ Recibido</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning text-dark">⏳ Pendiente</span>
+                            }
+                        </td>
+                        <td style="min-width: 220px;">
+                            <form asp-action="UpdateOrderDetails" method="post" class="row g-1">
+                                <input type="hidden" name="orderId" value="@o.Id" />
+                                <div class="col-6">
+                                    <label class="form-label p-0 m-0 small">Costo Envío:</label>
+                                    <input type="number" step="0.50" name="shippingCost" value="@o.ShippingCost" class="form-control form-control-sm" required />
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label p-0 m-0 small">Comprobante:</label>
+                                    <select name="paymentProofReceived" class="form-select form-select-sm">
+                                        <option value="false" selected="@(!o.PaymentProofReceived)">Pendiente</option>
+                                        <option value="true" selected="@(o.PaymentProofReceived)">Verificado</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <select name="newStatus" class="form-select form-select-sm" asp-for="@o.Status" asp-items="Html.GetEnumSelectList<EcommerceApp.Models.OrderStatus>()"></select>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <button type="submit" class="btn btn-pink btn-sm w-100">Actualizar Estado</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

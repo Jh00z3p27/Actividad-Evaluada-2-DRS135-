@@ -1,9 +1,10 @@
+@using EcommerceApp.Services
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Brillé Joyería, Donde cada brillo cuenta.</title>
+    <title>@ViewData["Title"] - Brillé Joyería</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <style>
         :root {
@@ -17,6 +18,13 @@
             background-color: #fffafb;
             color: var(--text-main);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
         }
 
         .bg-brille-pink {
@@ -29,6 +37,7 @@
             letter-spacing: 1.5px;
             color: var(--pink-dark) !important;
             font-size: 1.4rem;
+            text-decoration: none;
         }
 
         .slogan-text {
@@ -42,7 +51,7 @@
             color: white;
             border: none;
             border-radius: 20px;
-            padding: 5px 15px;
+            padding: 6px 18px;
         }
 
         .btn-pink:hover {
@@ -69,7 +78,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-brille-pink mb-4 shadow-sm">
+        <nav class="navbar navbar-expand-sm navbar-light bg-brille-pink mb-4 shadow-sm py-3">
             <div class="container">
                 <a class="navbar-brand brand-logo" asp-controller="Home" asp-action="Index">
                     ✨ BRILLÉ
@@ -84,11 +93,14 @@
                             <a class="nav-link fw-semibold text-secondary" asp-controller="Home" asp-action="Index">🌸 Anillos & Colecciones</a>
                         </li>
                     </ul>
+                    @{
+                        var cartCount = CartService.Instance.Items.Sum(i => i.Quantity);
+                    }
                     <div class="d-flex gap-2 align-items-center">
-                        <a class="btn btn-outline-pink btn-sm d-flex align-items-center" asp-controller="Cart" asp-action="Index">
-                            🛒 Carrito <span class="badge bg-danger ms-2">0</span>
+                        <a class="btn btn-outline-pink btn-sm d-flex align-items-center fw-bold" asp-controller="Cart" asp-action="Index">
+                            🛒 Carrito <span class="badge bg-danger rounded-pill ms-2">@cartCount</span>
                         </a>
-                        <a class="btn btn-pink btn-sm" asp-controller="Admin" asp-action="Index">⚙️ Admin</a>
+                        <a class="btn btn-pink btn-sm fw-bold" asp-controller="Admin" asp-action="Login">⚙️ Admin</a>
                     </div>
                 </div>
             </div>
@@ -101,10 +113,45 @@
         </main>
     </div>
 
+    <!-- Modal de Términos y Condiciones -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-brille-pink">
+                    <h5 class="modal-title fw-bold text-pink-dark" id="termsModalLabel">🌸 Términos y Condiciones de Envío - Brillé</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6><strong>1. Encomiendas (Pedidos Express):</strong></h6>
+                    <p class="small text-muted mb-3">
+                        Si seleccionas envio por encomienda, la recolección se coordinará vía WhatsApp indicando la agencia de Pedidos Express más cercana a tu departamento/municipio. Costo fijo de <strong>$2.00</strong>.
+                    </p>
+
+                    <h6><strong>2. Entregas Personalizadas en Santa Ana:</strong></h6>
+                    <p class="small text-muted mb-3">
+                        • <strong>Sábados:</strong> Únicamente en <em>Super Repuestos (25 Calle Poniente)</em> de 3:30 PM a 4:00 PM.<br />
+                        • <strong>Entre Semana:</strong> Únicamente en <em>Gasolinera UNO Plaza Real (Ciudad Real)</em> por mutuo acuerdo entre 8:00 AM y 7:00 PM.
+                    </p>
+
+                    <h6><strong>3. Compromiso de Recepción y Suspensión:</strong></h6>
+                    <p class="small text-danger mb-0">
+                        En caso de inasistencia al punto acordado o no retiro de la encomienda en el tiempo estipulado, la cuenta del usuario quedará <strong>temporalmente suspendida/baneada</strong> para futuras compras en Brillé durante el plazo determinado por la administración.
+                    </p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-pink btn-sm fw-bold" data-bs-dismiss="modal">Entendido ✨</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer text-center py-3 mt-5">
         <div class="container small text-secondary">
             &copy; 2026 - <strong>Brillé Joyería</strong> | Santa Ana, El Salvador 🇸🇻<br />
-            <span class="text-muted">Envíos nacionales con Melo Express ($1.50) y Pedidos Express ($2.00)</span>
+            <span>Envíos por Encomiendas o Personalizados (sujeto a términos y condiciones)</span>
+            <button type="button" class="btn btn-link btn-sm text-pink-dark p-0 ms-1 fw-bold text-decoration-none" data-bs-toggle="modal" data-bs-target="#termsModal">
+                ℹ️ Más info
+            </button>
         </div>
     </footer>
 
@@ -112,4 +159,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-

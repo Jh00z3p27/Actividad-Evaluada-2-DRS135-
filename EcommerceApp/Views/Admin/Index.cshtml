@@ -1,0 +1,68 @@
+@model IEnumerable<EcommerceApp.Models.Product>
+@{
+    ViewData["Title"] = "Gestión de Inventario";
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        ✨ @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="fw-bold text-pink-dark">⚙️ Inventario de Anillos (Brillé)</h3>
+    <div>
+        <a asp-action="Create" class="btn btn-pink me-2">➕ Agregar Nuevo Anillo / Categoría</a>
+        <a asp-action="Orders" class="btn btn-outline-pink">📦 Preordenes y Encomiendas</a>
+        <a asp-action="Logout" class="btn btn-sm btn-outline-secondary ms-2">Cerrar Sesión</a>
+    </div>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-0">
+        <table class="table align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock por Tallas</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="width: 80px;">
+                            <img src="@item.ImageUrl" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;" alt="@item.Name" />
+                        </td>
+                        <td>
+                            <strong>@item.Name</strong>
+                            <div class="text-muted small">@item.Description</div>
+                        </td>
+                        <td><span class="badge bg-light text-dark border">@item.Category?.Name</span></td>
+                        <td class="fw-bold text-pink-dark">$@item.Price</td>
+                        <td>
+                            @foreach (var s in item.Sizes)
+                            {
+                                <span class="badge @(s.Stock > 0 ? "bg-secondary" : "bg-danger") me-1">
+                                    Talla @s.SizeNumber: @s.Stock un.
+                                </span>
+                            }
+                        </td>
+                        <td>
+                            <form asp-action="DeleteProduct" method="post" onsubmit="return confirm('¿Seguro de borrar este anillo del inventario?');">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">🗑️ Borrar</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

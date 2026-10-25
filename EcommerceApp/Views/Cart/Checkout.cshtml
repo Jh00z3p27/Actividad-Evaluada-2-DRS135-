@@ -1,41 +1,94 @@
 @model EcommerceApp.Models.Order
 @{
-    ViewData["Title"] = "Checkout - Finalizar Reserva";
+    ViewData["Title"] = "Preorden de Reserva - Brillé";
+    var todayDate = DateTime.Now.ToString("yyyy-MM-dd");
 }
 
-<h3 class="fw-bold text-pink-dark mb-3">📋 Datos de la Reserva y Envío</h3>
+<h3 class="fw-bold text-pink-dark mb-3">📋 Formulario de Preorden</h3>
+
+<div class="alert alert-info border-0 shadow-sm mb-4">
+    🌸 <strong>Información Importante de Envío y Punto de Recolección:</strong><br />
+    • <strong>Encomiendas (Pedidos Express):</strong> Costo fijo de $2.00. El equipo de Brillé te asignará vía WhatsApp la agencia de Pedidos Express más cercana según tu Departamento y Municipio.<br />
+    • <strong>Entrega Personalizada:</strong> Sábados únicamente en <em>Super Repuestos (25 Calle Poniente)</em> de 3:30 PM a 4:00 PM. Entre semana en <em>Gasolinera UNO Plaza Real (Ciudad Real)</em> de 8:00 AM a 7:00 PM por mutuo acuerdo.
+</div>
 
 <form asp-action="ProcessCheckout" method="post" class="card p-4 shadow-sm border-0">
     <div class="row g-3">
         <div class="col-md-6">
-            <label class="form-label">Nombre Completo</label>
-            <input asp-for="CustomerName" class="form-control" required />
+            <label class="form-label fw-bold">Persona Encargada (Nombre Completo)</label>
+            <input asp-for="CustomerName" class="form-control" placeholder="Ej: Jose Cerritos" required />
         </div>
         <div class="col-md-6">
-            <label class="form-label">Correo Electrónico</label>
-            <input asp-for="CustomerEmail" type="email" class="form-control" required />
+            <label class="form-label fw-bold">Correo Electrónico para Validación</label>
+            <input asp-for="CustomerEmail" type="email" class="form-control" placeholder="josecerritosIDS@gmail.com" required />
         </div>
         <div class="col-md-6">
-            <label class="form-label">Teléfono / WhatsApp</label>
-            <input asp-for="CustomerPhone" class="form-control" required />
+            <label class="form-label fw-bold">Teléfono / WhatsApp de Contacto</label>
+            <input asp-for="CustomerPhone" class="form-control" placeholder="77001122" required />
         </div>
         <div class="col-md-6">
-            <label class="form-label">Dirección de Entrega</label>
-            <input asp-for="DestinationAddress" class="form-control" required />
-        </div>
-        <div class="col-md-6">
-            <label class="form-label">Método de Envío</label>
-            <select asp-for="Shipping" class="form-select" required>
-                <option value="0">MeloExpress ($1.50 - Recolección Lun/Jue)</option>
-                <option value="1">Pedidos Express ($2.00 - Recolección Mar/Vie)</option>
-                <option value="2">Entrega Personal ($3.00 - Caso Especial Yami)</option>
+            <label class="form-label fw-bold">Método de Envío Preferido</label>
+            <select asp-for="Shipping" class="form-select" id="shippingSelect" required onchange="toggleAddressField()">
+                <option value="0">📦 Encomienda (Pedidos Express - $2.00 Fijo)</option>
+                <option value="1">🤝 Entrega Personalizada</option>
             </select>
         </div>
+
         <div class="col-md-6">
-            <label class="form-label">Fecha Preferida de Entrega</label>
-            <input asp-for="PreferredDeliveryDate" type="date" class="form-control" required />
+            <label class="form-label fw-bold">Departamento</label>
+            <input asp-for="Department" class="form-control" placeholder="Ej: Santa Ana" required />
+        </div>
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Municipio</label>
+            <input asp-for="Municipality" class="form-control" placeholder="Ej: Santa Ana Centro" required />
+        </div>
+
+        <!-- Campo Dinámico: Solo se muestra si selecciona Entrega Personalizada -->
+        <div class="col-md-12 d-none" id="addressContainer">
+            <label class="form-label fw-bold">Dirección y Punto de Referencia Exácto</label>
+            <input asp-for="DestinationAddress" id="destinationInput" class="form-control" placeholder="Ej: Calle Principal #12, frente a Parque Central o Gasolinera UNO Plaza Real" />
+            <small class="text-muted">Especifique lugar, hora y punto de referencia para coordinar entrega personalizada por WhatsApp.</small>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Método de Pago</label>
+            <select asp-for="Payment" class="form-select" required>
+                <option value="0">💵 Efectivo contra entrega</option>
+                <option value="1">🏦 Transferencia Bancaria (Envío de comprobante requerido)</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Fecha Coordinada de Entrega / Retiro</label>
+            <input asp-for="PreferredDeliveryDate" type="date" value="@todayDate" class="form-control" required />
         </div>
     </div>
 
-    <button type="submit" class="btn btn-pink btn-lg mt-4 w-100">Confirmar Reserva ✨</button>
+    <button type="submit" class="btn btn-pink btn-lg mt-4 w-100 fw-bold">Enviar Preorden a Validación ✨</button>
 </form>
+
+@section Scripts {
+    <script>
+        function toggleAddressField() {
+            var shippingSelect = document.getElementById("shippingSelect");
+            var addressContainer = document.getElementById("addressContainer");
+            var destinationInput = document.getElementById("destinationInput");
+
+            // Si es 1 (Entrega Personalizada), se muestra y se vuelve requerido
+            if (shippingSelect.value === "1") {
+                addressContainer.classList.remove("d-none");
+                destinationInput.setAttribute("required", "required");
+            } else {
+                // Si es Encomienda (0), se oculta y no bloquea la validación
+                addressContainer.classList.add("d-none");
+                destinationInput.removeAttribute("required");
+                destinationInput.value = "Asignación de sucursal por WhatsApp";
+            }
+        }
+
+        // Ejecutar al cargar la vista
+        document.addEventListener("DOMContentLoaded", function () {
+            toggleAddressField();
+        });
+    </script>
+}

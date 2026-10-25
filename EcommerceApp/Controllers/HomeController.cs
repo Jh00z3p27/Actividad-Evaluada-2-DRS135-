@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EcommerceApp.Data;
+using EcommerceApp.Models;
 using EcommerceApp.Services;
 
 namespace EcommerceApp.Controllers
@@ -16,15 +17,19 @@ namespace EcommerceApp.Controllers
 
         public async Task<IActionResult> Index(int? categoryId)
         {
-            var query = _context.Products.Include(p => p.Category).Include(p => p.Sizes).AsQueryable();
+            var categories = await _context.Categories.ToListAsync();
+            ViewBag.Categories = categories;
+            ViewBag.SelectedCategory = categoryId;
+
+            var query = _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Sizes)
+                .AsQueryable();
 
             if (categoryId.HasValue)
             {
                 query = query.Where(p => p.CategoryId == categoryId.Value);
             }
-
-            ViewBag.Categories = await _context.Categories.ToListAsync();
-            ViewBag.SelectedCategory = categoryId;
 
             var products = await query.ToListAsync();
             return View(products);
@@ -33,19 +38,11 @@ namespace EcommerceApp.Controllers
         [HttpPost]
         public async Task<IActionResult> AddToCart(int productId, int size)
         {
-            var product = await _context.Products.Include(p => p.Sizes).FirstOrDefaultAsync(p => p.Id == productId);
+            var product = await _context.Products.FindAsync(productId);
             if (product != null)
             {
-                var sizeInfo = product.Sizes.FirstOrDefault(s => s.SizeNumber == size);
-                if (sizeInfo != null && sizeInfo.Stock > 0)
-                {
-                    CartService.Instance.AddItem(product.Id, product.Name, size, product.ImageUrl);
-                    TempData["Success"] = $"¡Anillo {product.Name} (Talla {size}) agregado al carrito!";
-                }
-                else
-                {
-                    TempData["Error"] = "La talla seleccionada no tiene stock disponible.";
-                }
+                CartService.Instance.AddItem(product, size);
+                TempData["Success"] = $"¡{product.Name} (Talla {size}) agregado al carrito!";
             }
             return RedirectToAction("Index");
         }

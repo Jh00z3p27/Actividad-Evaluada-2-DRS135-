@@ -41,8 +41,10 @@ namespace EcommerceApp.Controllers
             var product = await _context.Products.FindAsync(productId);
             if (product != null)
             {
-                CartService.Instance.AddItem(product, size);
-                TempData["Success"] = $"¡{product.Name} (Talla {size}) agregado al carrito!";
+                // Le pasamos a CartService los parámetros requeridos para la preorden
+                CartService.Instance.AddItem(product.Id, product.Name, (int)product.Price, product.ImageUrl, size);
+                
+                TempData["Success"] = $"¡{product.Name} (Talla {size}) agregado a la preorden!";
             }
             return RedirectToAction("Index");
         }

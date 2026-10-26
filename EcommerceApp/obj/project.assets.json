@@ -2382,19 +2382,19 @@
     ]
   },
   "packageFolders": {
-    "/home/cerritos/.nuget/packages/": {}
+    "C:\\Users\\dora2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/EcommerceApp.csproj",
+      "projectUniqueName": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\EcommerceApp.csproj",
       "projectName": "EcommerceApp",
-      "projectPath": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/EcommerceApp.csproj",
-      "packagesPath": "/home/cerritos/.nuget/packages/",
-      "outputPath": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/obj/",
+      "projectPath": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\EcommerceApp.csproj",
+      "packagesPath": "C:\\Users\\dora2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/cerritos/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\dora2\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2457,7 +2457,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.426/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

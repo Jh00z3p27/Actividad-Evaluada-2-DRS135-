@@ -976,5 +976,357 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0baaf6c1-dc3e-48d0-a920-2653b1eb6adf_Anillo plata Ale s925 Pandora, Corazón Morado.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/0baaf6c1-dc3e-48d0-a920-2653b1eb6adf_Anillo plata Ale s925 Pandora, Corazón Morado.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0baaf6c1-dc3e-48d0-a920-2653b1eb6adf_Anillo plata Ale s925 Pandora, Corazón Morado.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0e0dcd7b-401f-4dc6-a789-921e9631189c_Anillo plata Ale s925 Pandora. Con piedra redonda .jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/0e0dcd7b-401f-4dc6-a789-921e9631189c_Anillo plata Ale s925 Pandora. Con piedra redonda .jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0e0dcd7b-401f-4dc6-a789-921e9631189c_Anillo plata Ale s925 Pandora. Con piedra redonda .jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\167908d3-3ae5-458d-b2a1-738cc8389f6b_Anillo plata Ale s925 Pandora Corona.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/167908d3-3ae5-458d-b2a1-738cc8389f6b_Anillo plata Ale s925 Pandora Corona.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\167908d3-3ae5-458d-b2a1-738cc8389f6b_Anillo plata Ale s925 Pandora Corona.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1a7c62f1-02c1-4c6c-8d2c-7186fa3e30b4_Anillo plata Ale s925 Pandora,con baño de oro  y piedra transparente.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/1a7c62f1-02c1-4c6c-8d2c-7186fa3e30b4_Anillo plata Ale s925 Pandora,con baño de oro  y piedra transparente.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1a7c62f1-02c1-4c6c-8d2c-7186fa3e30b4_Anillo plata Ale s925 Pandora,con baño de oro  y piedra transparente.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\28dac25f-894c-4b56-83ba-08308e2b10fd_Anillo plata Ale s925 Pandora, Corazón Rojo.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/28dac25f-894c-4b56-83ba-08308e2b10fd_Anillo plata Ale s925 Pandora, Corazón Rojo.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\28dac25f-894c-4b56-83ba-08308e2b10fd_Anillo plata Ale s925 Pandora, Corazón Rojo.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2c3f7fb2-aced-4efb-bd37-9315d4fd2e93_Anillo plata Ale s925 Pandora, Corazón Negro.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/2c3f7fb2-aced-4efb-bd37-9315d4fd2e93_Anillo plata Ale s925 Pandora, Corazón Negro.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2c3f7fb2-aced-4efb-bd37-9315d4fd2e93_Anillo plata Ale s925 Pandora, Corazón Negro.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\322945df-463c-4dc8-9a88-da808ceedf23_Anillo plata Ale s925 Pandora Corazón Doble.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/322945df-463c-4dc8-9a88-da808ceedf23_Anillo plata Ale s925 Pandora Corazón Doble.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\322945df-463c-4dc8-9a88-da808ceedf23_Anillo plata Ale s925 Pandora Corazón Doble.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\352a4436-b7b8-4962-8b0e-ee03b837d4b0_Anillo plata Ale s925 Pandora Mariposa Azul.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/352a4436-b7b8-4962-8b0e-ee03b837d4b0_Anillo plata Ale s925 Pandora Mariposa Azul.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\352a4436-b7b8-4962-8b0e-ee03b837d4b0_Anillo plata Ale s925 Pandora Mariposa Azul.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\3677d020-a522-4039-9b89-455b0f4b9e07_Anillo plata Ale s925 Pandora, Corazón Plateado.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/3677d020-a522-4039-9b89-455b0f4b9e07_Anillo plata Ale s925 Pandora, Corazón Plateado.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\3677d020-a522-4039-9b89-455b0f4b9e07_Anillo plata Ale s925 Pandora, Corazón Plateado.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\40ad28b4-47e7-481b-aee5-d3c6127e86e1_Anillo plata Ale s925 Pandora, Corazón Azul.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/40ad28b4-47e7-481b-aee5-d3c6127e86e1_Anillo plata Ale s925 Pandora, Corazón Azul.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\40ad28b4-47e7-481b-aee5-d3c6127e86e1_Anillo plata Ale s925 Pandora, Corazón Azul.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\450ba251-4982-46bf-b10f-3d6d23a82c33_Anillo plata Ale s925 Pandora. Corona Minimalista.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/450ba251-4982-46bf-b10f-3d6d23a82c33_Anillo plata Ale s925 Pandora. Corona Minimalista.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\450ba251-4982-46bf-b10f-3d6d23a82c33_Anillo plata Ale s925 Pandora. Corona Minimalista.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\474d916b-3433-494d-b914-0625afd05f20_Anillo plata Ale s925 Pandora. Doble lazo .jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/474d916b-3433-494d-b914-0625afd05f20_Anillo plata Ale s925 Pandora. Doble lazo .jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\474d916b-3433-494d-b914-0625afd05f20_Anillo plata Ale s925 Pandora. Doble lazo .jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\48e8fd2b-7bfc-4cd0-9819-19187b56cad5_Anillo plata Ale s925 Pandora. Triple piedras azules .jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/48e8fd2b-7bfc-4cd0-9819-19187b56cad5_Anillo plata Ale s925 Pandora. Triple piedras azules .jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\48e8fd2b-7bfc-4cd0-9819-19187b56cad5_Anillo plata Ale s925 Pandora. Triple piedras azules .jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\692933ee-3798-4953-8b3c-6faff78887b9_Anillo plata Ale s925 Pandora. Con piedras azules formando una flor.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/692933ee-3798-4953-8b3c-6faff78887b9_Anillo plata Ale s925 Pandora. Con piedras azules formando una flor.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\692933ee-3798-4953-8b3c-6faff78887b9_Anillo plata Ale s925 Pandora. Con piedras azules formando una flor.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\9f669f87-c5a6-44fc-8fd6-b7cc9ea97f2e_Anillo plata Ale s925 Pandora.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/9f669f87-c5a6-44fc-8fd6-b7cc9ea97f2e_Anillo plata Ale s925 Pandora.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\9f669f87-c5a6-44fc-8fd6-b7cc9ea97f2e_Anillo plata Ale s925 Pandora.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b4f4891f-ebe0-45c2-9064-4e87eafb5171_Anillo plata Ale s925 Pandora, Corazón Verde.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/b4f4891f-ebe0-45c2-9064-4e87eafb5171_Anillo plata Ale s925 Pandora, Corazón Verde.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b4f4891f-ebe0-45c2-9064-4e87eafb5171_Anillo plata Ale s925 Pandora, Corazón Verde.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ce2ed93d-c5b7-409c-9ac1-7f57d8c91639_Anillo plata Ale s925 Pandora, Chonga Plateada.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/ce2ed93d-c5b7-409c-9ac1-7f57d8c91639_Anillo plata Ale s925 Pandora, Chonga Plateada.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ce2ed93d-c5b7-409c-9ac1-7f57d8c91639_Anillo plata Ale s925 Pandora, Chonga Plateada.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\d3fb2162-d8cb-4100-89a1-fffefd82a60b_Anillo plata Ale s925 Pandora con baño de oro rosa .jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/d3fb2162-d8cb-4100-89a1-fffefd82a60b_Anillo plata Ale s925 Pandora con baño de oro rosa .jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\d3fb2162-d8cb-4100-89a1-fffefd82a60b_Anillo plata Ale s925 Pandora con baño de oro rosa .jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\de41514d-34ff-4c93-8d4a-26bb7356cfaa_Anillo plata Ale s925 Pandora, Diamante Minimalista.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/de41514d-34ff-4c93-8d4a-26bb7356cfaa_Anillo plata Ale s925 Pandora, Diamante Minimalista.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\de41514d-34ff-4c93-8d4a-26bb7356cfaa_Anillo plata Ale s925 Pandora, Diamante Minimalista.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\e8634741-1e20-46c8-ab8f-7f06f945232e_Anillo plata Ale s925 Pandora, Chonga Rosa.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/e8634741-1e20-46c8-ab8f-7f06f945232e_Anillo plata Ale s925 Pandora, Chonga Rosa.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\e8634741-1e20-46c8-ab8f-7f06f945232e_Anillo plata Ale s925 Pandora, Chonga Rosa.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ed40beb9-8acd-4621-824b-3a295db98625_Anillo geométrico  plata Ale s925 Pandora.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/ed40beb9-8acd-4621-824b-3a295db98625_Anillo geométrico  plata Ale s925 Pandora.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ed40beb9-8acd-4621-824b-3a295db98625_Anillo geométrico  plata Ale s925 Pandora.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\f7d01ce0-4264-4080-8632-7d1db9bc450d_Anillo plata Ale s925 Pandora, Geometrico.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EcommerceApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EcommerceApp</BasePath>
+      <RelativePath>uploads/f7d01ce0-4264-4080-8632-7d1db9bc450d_Anillo plata Ale s925 Pandora, Geometrico.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\f7d01ce0-4264-4080-8632-7d1db9bc450d_Anillo plata Ale s925 Pandora, Geometrico.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EcommerceApp.Models.Product>
+@model IEnumerable<EcommerceApp.Models.Product>
 @{
     ViewData["Title"] = "Catálogo de Anillos - Brillé";
     var categories = ViewBag.Categories as List<EcommerceApp.Models.Category>;
@@ -8,6 +8,13 @@
 {
     <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
         ✨ @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
+        ⛔ @TempData["Error"]
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
@@ -50,29 +57,39 @@
                         <span class="fs-4 fw-bold text-pink-dark">$@item.Price</span>
                     </div>
 
-                    <form asp-controller="Home" asp-action="AddToCart" method="post" class="mt-2">
+                    <form asp-controller="Home" asp-action="AddToCart" method="post" class="mt-2" onsubmit="return validarAntesDeEnviar(this)">
                         <input type="hidden" name="productId" value="@item.Id" />
                         <div class="mb-2">
                             <div class="d-flex justify-content-between align-items-center mb-1">
-                                <label class="form-label small fw-bold mb-0">Seleccionar Talla:</label>
+                                <label class="form-label small fw-bold mb-0">Talla y Cantidad:</label>
                                 <button type="button" class="btn btn-link p-0 text-pink-dark small text-decoration-none fw-bold" data-bs-toggle="modal" data-bs-target="#sizeGuideModal">
-                                    📏 ¿Te ayudo con tu talla?
+                                    📏 Guía de tallas
                                 </button>
                             </div>
-                            <select name="size" class="form-select form-select-sm" required>
-                                <option value="">-- Seleccionar Talla --</option>
-                                @foreach (var s in item.Sizes)
-                                {
-                                    if (s.Stock > 0)
-                                    {
-                                        <option value="@s.SizeNumber">Talla @s.SizeNumber (Stock: @s.Stock un.)</option>
-                                    }
-                                    else
-                                    {
-                                        <option value="@s.SizeNumber" disabled>Talla @s.SizeNumber (Agotada)</option>
-                                    }
-                                }
-                            </select>
+                            <div class="row g-2">
+                                <div class="col-8">
+                                    <select name="size" class="form-select form-select-sm" required onchange="actualizarLimiteStock(this)">
+                                        <option value="" data-stock="0">-- Talla --</option>
+                                        @foreach (var s in item.Sizes)
+                                        {
+                                            if (s.Stock > 0)
+                                            {
+                                                <option value="@s.SizeNumber" data-stock="@s.Stock">Talla @s.SizeNumber (Stock: @s.Stock un.)</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@s.SizeNumber" data-stock="0" disabled>Talla @s.SizeNumber (Agotada)</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text px-1 text-muted small">Cant.</span>
+                                        <input type="number" name="quantity" class="form-control form-control-sm text-center" value="1" min="1" max="99" required />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-pink w-100 btn-sm fw-bold">🛍️ Agregar a la Preorden</button>
                     </form>
@@ -164,3 +181,36 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+<script>
+    function actualizarLimiteStock(selectElem) {
+        var opt = selectElem.options[selectElem.selectedIndex];
+        var stock = parseInt(opt.getAttribute('data-stock') || '0');
+        var form = selectElem.closest('form');
+        var qtyInput = form.querySelector('input[name="quantity"]');
+        if (stock > 0) {
+            qtyInput.max = stock;
+            if (parseInt(qtyInput.value) > stock) {
+                qtyInput.value = stock;
+            }
+        }
+    }
+
+    function validarAntesDeEnviar(formElem) {
+        var select = formElem.querySelector('select[name="size"]');
+        var opt = select.options[select.selectedIndex];
+        var stock = parseInt(opt.getAttribute('data-stock') || '0');
+        var qtyInput = formElem.querySelector('input[name="quantity"]');
+        var qty = parseInt(qtyInput.value || '1');
+
+        if (stock > 0 && qty > stock) {
+            alert('No se puede registrar el pedido: Solo hay ' + stock + ' unidad(es) disponibles en stock para esta talla. Por favor ingresa ' + stock + ' o menos.');
+            qtyInput.value = stock;
+            qtyInput.focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+}

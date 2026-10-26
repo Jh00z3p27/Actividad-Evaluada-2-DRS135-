@@ -1,263 +1,351 @@
 {
   "Files": [
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/obj/Debug/net8.0/scopedcss/projectbundle/EcommerceApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/EcommerceApp.bundle.scp.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EcommerceApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EcommerceApp.bundle.scp.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/LICENSE",
-      "PackagePath": "staticwebassets/lib/bootstrap"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation/LICENSE.md",
-      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery/dist/jquery.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery/dist/jquery.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "/home/cerritos/Documentos/ProyectoBrille/Actividad-Evaluada-2-DRS135-/EcommerceApp/wwwroot/lib/jquery/dist/jquery.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.EcommerceApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\0baaf6c1-dc3e-48d0-a920-2653b1eb6adf_Anillo plata Ale s925 Pandora, Corazón Morado.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\0baaf6c1-dc3e-48d0-a920-2653b1eb6adf_Anillo plata Ale s925 Pandora, Corazón Morado.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\0e0dcd7b-401f-4dc6-a789-921e9631189c_Anillo plata Ale s925 Pandora. Con piedra redonda .jpeg",
+      "PackagePath": "staticwebassets\\uploads\\0e0dcd7b-401f-4dc6-a789-921e9631189c_Anillo plata Ale s925 Pandora. Con piedra redonda .jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\167908d3-3ae5-458d-b2a1-738cc8389f6b_Anillo plata Ale s925 Pandora Corona.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\167908d3-3ae5-458d-b2a1-738cc8389f6b_Anillo plata Ale s925 Pandora Corona.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\1a7c62f1-02c1-4c6c-8d2c-7186fa3e30b4_Anillo plata Ale s925 Pandora,con baño de oro  y piedra transparente.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\1a7c62f1-02c1-4c6c-8d2c-7186fa3e30b4_Anillo plata Ale s925 Pandora,con baño de oro  y piedra transparente.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\28dac25f-894c-4b56-83ba-08308e2b10fd_Anillo plata Ale s925 Pandora, Corazón Rojo.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\28dac25f-894c-4b56-83ba-08308e2b10fd_Anillo plata Ale s925 Pandora, Corazón Rojo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\2c3f7fb2-aced-4efb-bd37-9315d4fd2e93_Anillo plata Ale s925 Pandora, Corazón Negro.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\2c3f7fb2-aced-4efb-bd37-9315d4fd2e93_Anillo plata Ale s925 Pandora, Corazón Negro.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\322945df-463c-4dc8-9a88-da808ceedf23_Anillo plata Ale s925 Pandora Corazón Doble.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\322945df-463c-4dc8-9a88-da808ceedf23_Anillo plata Ale s925 Pandora Corazón Doble.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\352a4436-b7b8-4962-8b0e-ee03b837d4b0_Anillo plata Ale s925 Pandora Mariposa Azul.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\352a4436-b7b8-4962-8b0e-ee03b837d4b0_Anillo plata Ale s925 Pandora Mariposa Azul.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\3677d020-a522-4039-9b89-455b0f4b9e07_Anillo plata Ale s925 Pandora, Corazón Plateado.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\3677d020-a522-4039-9b89-455b0f4b9e07_Anillo plata Ale s925 Pandora, Corazón Plateado.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\40ad28b4-47e7-481b-aee5-d3c6127e86e1_Anillo plata Ale s925 Pandora, Corazón Azul.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\40ad28b4-47e7-481b-aee5-d3c6127e86e1_Anillo plata Ale s925 Pandora, Corazón Azul.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\450ba251-4982-46bf-b10f-3d6d23a82c33_Anillo plata Ale s925 Pandora. Corona Minimalista.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\450ba251-4982-46bf-b10f-3d6d23a82c33_Anillo plata Ale s925 Pandora. Corona Minimalista.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\474d916b-3433-494d-b914-0625afd05f20_Anillo plata Ale s925 Pandora. Doble lazo .jpeg",
+      "PackagePath": "staticwebassets\\uploads\\474d916b-3433-494d-b914-0625afd05f20_Anillo plata Ale s925 Pandora. Doble lazo .jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\48e8fd2b-7bfc-4cd0-9819-19187b56cad5_Anillo plata Ale s925 Pandora. Triple piedras azules .jpeg",
+      "PackagePath": "staticwebassets\\uploads\\48e8fd2b-7bfc-4cd0-9819-19187b56cad5_Anillo plata Ale s925 Pandora. Triple piedras azules .jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\692933ee-3798-4953-8b3c-6faff78887b9_Anillo plata Ale s925 Pandora. Con piedras azules formando una flor.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\692933ee-3798-4953-8b3c-6faff78887b9_Anillo plata Ale s925 Pandora. Con piedras azules formando una flor.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\9f669f87-c5a6-44fc-8fd6-b7cc9ea97f2e_Anillo plata Ale s925 Pandora.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\9f669f87-c5a6-44fc-8fd6-b7cc9ea97f2e_Anillo plata Ale s925 Pandora.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\b4f4891f-ebe0-45c2-9064-4e87eafb5171_Anillo plata Ale s925 Pandora, Corazón Verde.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\b4f4891f-ebe0-45c2-9064-4e87eafb5171_Anillo plata Ale s925 Pandora, Corazón Verde.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\ce2ed93d-c5b7-409c-9ac1-7f57d8c91639_Anillo plata Ale s925 Pandora, Chonga Plateada.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\ce2ed93d-c5b7-409c-9ac1-7f57d8c91639_Anillo plata Ale s925 Pandora, Chonga Plateada.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\d3fb2162-d8cb-4100-89a1-fffefd82a60b_Anillo plata Ale s925 Pandora con baño de oro rosa .jpeg",
+      "PackagePath": "staticwebassets\\uploads\\d3fb2162-d8cb-4100-89a1-fffefd82a60b_Anillo plata Ale s925 Pandora con baño de oro rosa .jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\de41514d-34ff-4c93-8d4a-26bb7356cfaa_Anillo plata Ale s925 Pandora, Diamante Minimalista.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\de41514d-34ff-4c93-8d4a-26bb7356cfaa_Anillo plata Ale s925 Pandora, Diamante Minimalista.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\e8634741-1e20-46c8-ab8f-7f06f945232e_Anillo plata Ale s925 Pandora, Chonga Rosa.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\e8634741-1e20-46c8-ab8f-7f06f945232e_Anillo plata Ale s925 Pandora, Chonga Rosa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\ed40beb9-8acd-4621-824b-3a295db98625_Anillo geométrico  plata Ale s925 Pandora.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\ed40beb9-8acd-4621-824b-3a295db98625_Anillo geométrico  plata Ale s925 Pandora.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dora2\\Downloads\\Actividad-Evaluada-2-DRS135-\\EcommerceApp\\wwwroot\\uploads\\f7d01ce0-4264-4080-8632-7d1db9bc450d_Anillo plata Ale s925 Pandora, Geometrico.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\f7d01ce0-4264-4080-8632-7d1db9bc450d_Anillo plata Ale s925 Pandora, Geometrico.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EcommerceApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.EcommerceApp.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EcommerceApp.props",
       "PackagePath": "build\\EcommerceApp.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.EcommerceApp.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EcommerceApp.props",
       "PackagePath": "buildMultiTargeting\\EcommerceApp.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.EcommerceApp.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EcommerceApp.props",
       "PackagePath": "buildTransitive\\EcommerceApp.props"
     }
   ],

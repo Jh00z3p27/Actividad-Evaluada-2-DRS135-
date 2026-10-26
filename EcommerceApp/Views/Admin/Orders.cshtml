@@ -54,7 +54,7 @@
                             <small>
                                 @foreach (var item in o.Items)
                                 {
-                                    <div>• @item.Product?.Name (Talla @item.SelectedSize) x@item.Quantity</div>
+                                    <div>• @item.Product?.Name (Talla @item.SelectedSize) x@(item.Quantity)</div>
                                 }
                             </small>
                             <strong class="text-pink-dark">Subtotal: $@o.Subtotal</strong>

@@ -14,19 +14,17 @@ namespace EcommerceApp.Services
         public async Task UpdateAsync(Order order, OrderStatus previousStatus, ApplicationDbContext context)
         {
             // Si la orden cambia a Devuelto o Cancelado, el Patrón Observer restaura automáticamente el stock en SQLite
-            if (order.Status == OrderStatus.Devuelto || order.Status == OrderStatus.Cancelado)
+            if ((order.Status == OrderStatus.Devuelto || order.Status == OrderStatus.Cancelado) &&
+                (previousStatus != OrderStatus.Devuelto && previousStatus != OrderStatus.Cancelado))
             {
-                if (previousStatus != OrderStatus.Devuelto && previousStatus != OrderStatus.Cancelado)
+                foreach (var item in order.Items)
                 {
-                    foreach (var item in order.Items)
-                    {
-                        var size = await context.ProductSizes
-                            .FirstOrDefaultAsync(s => s.ProductId == item.ProductId && s.SizeNumber == item.SelectedSize);
+                    var size = await context.ProductSizes
+                        .FirstOrDefaultAsync(s => s.ProductId == item.ProductId && s.SizeNumber == item.SelectedSize);
 
-                        if (size != null)
-                        {
-                            size.Stock += item.Quantity;
-                        }
+                    if (size != null)
+                    {
+                        size.Stock += item.Quantity;
                     }
                 }
             }

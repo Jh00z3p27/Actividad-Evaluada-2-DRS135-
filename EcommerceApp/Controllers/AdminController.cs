@@ -193,22 +193,47 @@ namespace EcommerceApp.Controllers
         {
             if (!IsAdminAuthenticated()) return RedirectToAction("Login");
 
-            var order = await _context.Orders.FindAsync(orderId);
+            var order = await _context.Orders
+                .Include(o => o.Items)
+                .FirstOrDefaultAsync(o => o.Id == orderId);
+
             if (order != null)
             {
                 var previousStatus = order.Status;
+
+                // Determinar si debe restaurarse el stock ANTES de cambiar el estado
+                bool restaurarStock = (newStatus == OrderStatus.Cancelado || newStatus == OrderStatus.Devuelto)
+                                   && (previousStatus != OrderStatus.Cancelado && previousStatus != OrderStatus.Devuelto);
+
+                // Restaurar stock directamente en la BD
+                if (restaurarStock)
+                {
+                    foreach (var item in order.Items)
+                    {
+                        var productSize = await _context.ProductSizes
+                            .FirstOrDefaultAsync(s => s.ProductId == item.ProductId && s.SizeNumber == item.SelectedSize);
+
+                        if (productSize != null)
+                        {
+                            productSize.Stock += item.Quantity;
+                        }
+                    }
+                }
+
+                // Actualizar datos de la orden
                 order.ShippingCost = shippingCost;
                 order.Status = newStatus;
                 order.PaymentProofReceived = paymentProofReceived;
 
-                // Patrón Observer para restitución automática de stock
+                // Patrón Observer: notificación de cambio de estado
                 var subject = new OrderSubject();
-                subject.Attach(new StockRestorationObserver());
                 subject.Attach(new NotificationObserver());
                 await subject.NotifyAsync(order, previousStatus, _context);
 
                 await _context.SaveChangesAsync();
-                TempData["Success"] = $"Preorden #{order.Id} actualizada: Envío ${shippingCost} - Estado: {newStatus}.";
+
+                string mensajeExtra = restaurarStock ? " — ¡Stock devuelto al inventario automáticamente!" : "";
+                TempData["Success"] = $"Preorden #{order.Id} actualizada: Estado: {newStatus}{mensajeExtra}.";
             }
             return RedirectToAction("Orders");
         }
